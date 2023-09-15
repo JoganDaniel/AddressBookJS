@@ -75,6 +75,17 @@ class AddressBook {
             return false; 
         }
     }
+    deleteContact(name) {
+        let a = 0;
+        this.contacts.forEach(element => {
+            if (name === element.firstName) {
+                console.log("Contact Deleted Successfully");
+                this.contacts.splice(a, 1);
+            }
+            a++;
+        }
+        );
+    }
 
 }
 

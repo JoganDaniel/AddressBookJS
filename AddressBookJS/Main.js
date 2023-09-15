@@ -21,3 +21,5 @@ if(foundContact != null){
 addressBook.editContact(foundContact,contact4);
 }
 addressBook.displayContacts();
+addressBook.deleteContact("Baa");
+addressBook.displayContacts();
