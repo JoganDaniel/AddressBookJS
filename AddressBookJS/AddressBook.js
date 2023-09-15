@@ -18,7 +18,7 @@ class AddressBook {
             console.log(`Zip Code: ${contact.zip}`);
             console.log(`Phone Number: ${contact.phoneNumber}`);
             console.log(`Email: ${contact.email}`);
-            console.log();
+            console.log("");
         });
     }
 
@@ -50,6 +50,32 @@ class AddressBook {
         }
         
     }
+    findContactByName(firstName) {
+        const foundContactIndex = this.contacts.findIndex(contact => {
+            return contact.firstName === firstName;
+        });
+
+        if (foundContactIndex !== -1) {
+            return this.contacts[foundContactIndex];
+        } else {
+            return null;
+        }
+    }
+    editContact(existingContact, updatedContactInfo) {
+        const foundContactIndex = this.contacts.findIndex(contact => {
+            return contact === existingContact;
+        });
+
+        if (foundContactIndex !== -1) {
+            this.contacts[foundContactIndex] = updatedContactInfo;
+            console.log("Updated");
+            return true; 
+        } else {
+            console.log("Wrong input");
+            return false; 
+        }
+    }
+
 }
 
 module.exports = AddressBook;

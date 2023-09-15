@@ -10,4 +10,4 @@ class Contact {
         this.email = email;
     }
 }
-module.exports= Contact;
+module.exports= Contact

@@ -14,3 +14,10 @@ addressBook.addContact(contact2);
 addressBook.validateContact(contact3);
 addressBook.addContact(contact3);
 addressBook.displayContacts();
+const contact4 = new Contact("Vuyewfdywf", "Pftygvutef", "gtgrgw", "trghrt", "4rq34r", "877866", "9993459977", "update@c.com");
+
+const foundContact = addressBook.findContactByName("Aaa");
+if(foundContact != null){
+addressBook.editContact(foundContact,contact4);
+}
+addressBook.displayContacts();
