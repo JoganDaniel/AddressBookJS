@@ -23,3 +23,4 @@ addressBook.editContact(foundContact,contact4);
 addressBook.displayContacts();
 addressBook.deleteContact("Baa");
 addressBook.displayContacts();
+console.log(addressBook.ContactCount());
