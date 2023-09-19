@@ -122,6 +122,13 @@ class AddressBook {
 
         return foundContact;
     }
+    findContactByStateNCity(city,state) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.state === state && contact.city === city;
+        });
+
+        return foundContact;
+    }
 }
 
 module.exports = AddressBook;

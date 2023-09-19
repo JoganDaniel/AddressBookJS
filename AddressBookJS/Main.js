@@ -26,6 +26,7 @@ addressBook.displayContacts();
 console.log(addressBook.ContactCount());
 console.log(addressBook.findDuplicates());
 
-console.log(addressBook.findContactByCity("awefewf"));
+console.log(addressBook.findContactByCity("trghrt"));
 
 console.log(addressBook.findContactByState("ljjgfe"));
+console.log(addressBook.findContactByStateNCity("trghrt","ljjgfe"));
