@@ -139,6 +139,20 @@ class AddressBook {
 
     return foundContact.length;
   }
+  sortByFirstName() {
+    this.contacts.sort((a, b) => {
+        const name1 = a.firstName.toLowerCase();
+        const name2 = b.firstName.toLowerCase();
+
+        if (name1 < name2)
+            return -1;
+        if (name1 > name2)
+            return 1;
+        else
+            return 0;
+
+    })
+}
 }
 
 module.exports = AddressBook;
