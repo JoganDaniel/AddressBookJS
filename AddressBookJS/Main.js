@@ -25,3 +25,7 @@ addressBook.deleteContact("Baa");
 addressBook.displayContacts();
 console.log(addressBook.ContactCount());
 console.log(addressBook.findDuplicates());
+
+console.log(addressBook.findContactByCity("awefewf"));
+
+console.log(addressBook.findContactByState("ljjgfe"));

@@ -4,8 +4,11 @@ class AddressBook {
     }
 
     addContact(contact) {
-        this.contacts.push(contact);
-        console.log("Contact Added Successfully");
+        if(this.findDuplicates()===true)
+            {this.contacts.push(contact);}
+        else{
+            console.log("Contact already present")
+        }
     }
 
     displayContacts() {
@@ -105,7 +108,20 @@ class AddressBook {
         }
         return newArr[0]===undefined;
     }
+    findContactByCity(city) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.city === city;
+        });
 
+        return foundContact;
+    }
+    findContactByState(state) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.state === state;
+        });
+
+        return foundContact;
+    }
 }
 
 module.exports = AddressBook;
