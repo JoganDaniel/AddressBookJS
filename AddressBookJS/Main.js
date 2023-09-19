@@ -30,3 +30,4 @@ console.log(addressBook.findContactByCity("trghrt"));
 
 console.log(addressBook.findContactByState("ljjgfe"));
 console.log(addressBook.findContactByStateNCity("trghrt","ljjgfe"));
+console.log(addressBook.CountContactInStateNCity("trghrt","ljjgfe"));
